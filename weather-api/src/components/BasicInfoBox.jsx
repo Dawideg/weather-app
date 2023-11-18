@@ -4,6 +4,7 @@ const BasicInfoBox = ({ weatherData }) => {
   if (!weatherData) {
     return <div>Loading data ...</div>;
   }
+
   return (
     <div className="basic-box">
       <img
