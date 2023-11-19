@@ -1,12 +1,12 @@
 import React from "react";
 
-const BasicInfoBox = ({ weatherData }) => {
+const BasicInfoBox = ({ weatherData, isDay }) => {
   if (!weatherData) {
     return <div>Loading data ...</div>;
   }
-
+  console.log(isDay);
   return (
-    <div className="basic-box">
+    <div className={`basic-box ${isDay ? " day-el-view" : " night-el-view"}`}>
       <img
         className="location-icon"
         src={weatherData.current.condition.icon}

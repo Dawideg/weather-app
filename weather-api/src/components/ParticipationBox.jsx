@@ -1,7 +1,6 @@
 import React from "react";
 
-const ParticipationBox = ({ forecastData }) => {
-  console.log(forecastData);
+const ParticipationBox = ({ forecastData, isDay }) => {
   const dayNamesArr = [
     "Sunday",
     "Monday",
@@ -18,7 +17,9 @@ const ParticipationBox = ({ forecastData }) => {
   };
 
   return (
-    <div className="forecast-box">
+    <div
+      className={`forecast-box ${isDay ? " day-el-view" : " night-el-view"}`}
+    >
       <p className="forecast-day-name">{getDayNameFun()}</p>
       <img
         className="forecast-img"
