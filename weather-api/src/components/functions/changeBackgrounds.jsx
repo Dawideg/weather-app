@@ -3,7 +3,6 @@ import React from "react";
 const changeBackgrounds = (weatherData, isDay) => {
   let conditionTxt = weatherData.current.condition.text.toLowerCase();
   document.body.className = "";
-
   if (isDay) {
     if (
       conditionTxt.includes("cloud") ||
@@ -24,7 +23,8 @@ const changeBackgrounds = (weatherData, isDay) => {
     if (
       conditionTxt.includes("cloud") ||
       conditionTxt.includes("rain") ||
-      conditionTxt.includes("showers")
+      conditionTxt.includes("showers") ||
+      conditionTxt.includes("overcast")
     ) {
       document.body.classList.add("body-bg4");
     }

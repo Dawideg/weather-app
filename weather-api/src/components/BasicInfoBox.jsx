@@ -4,7 +4,6 @@ const BasicInfoBox = ({ weatherData, isDay }) => {
   if (!weatherData) {
     return <div>Loading data ...</div>;
   }
-  console.log(isDay);
   return (
     <div className={`basic-box ${isDay ? " day-el-view" : " night-el-view"}`}>
       <img
