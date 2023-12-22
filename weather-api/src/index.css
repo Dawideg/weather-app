@@ -162,11 +162,11 @@ body {
   margin-top: 5px;
 }
 .modal-div {
-  width: 75vw;
+  width: 40vw;
   height: 90vh;
   position: fixed;
   top: 5vh;
-  right: 12vw;
+  right: 29vw;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.782);
   border-radius: 10px;
@@ -179,6 +179,90 @@ body {
   top: 0px;
   right: -5px;
 }
+.chartDiv {
+  width: 500px;
+  margin: auto;
+  position: relative;
+  bottom: 120px;
+}
+.loading {
+  border: 3px solid black;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  margin-top: 25vh;
+}
+.loading p {
+  margin-top: 80px;
+  font-size: 28px;
+}
+
+.modal-info-div {
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.modal-info-div h1 {
+  font-size: 40px;
+  margin-left: 25px;
+}
+.modal-condition {
+  margin-top: -20px;
+  margin-left: 28px;
+}
+.modal-img {
+  display: inline-block;
+  position: relative;
+  bottom: 115px;
+  left: 430px;
+  width: 100px;
+}
+.modal-min-max-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
+  width: 400px;
+  position: relative;
+  bottom: 100px;
+  margin: auto;
+}
+.modal-cor-div {
+  margin: auto;
+  width: 250px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+}
+.modal-cor-1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.modal-cor-2 {
+  font-size: 40px;
+  margin-top: -20px;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }

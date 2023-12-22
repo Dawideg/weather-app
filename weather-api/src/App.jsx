@@ -71,7 +71,11 @@ const App = () => {
       </div>
     );
   } else {
-    return <div className="loading">Loading...</div>;
+    return (
+      <div className="loading">
+        <p>Loading...</p>
+      </div>
+    );
   }
 };
 
